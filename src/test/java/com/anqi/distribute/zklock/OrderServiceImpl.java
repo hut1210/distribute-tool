@@ -7,8 +7,8 @@ import com.anqi.distribute.lock.zklock.zksimple.ZkTemplateLock;
 public class OrderServiceImpl {
 
     private static OrderNumberGenerator generator = new OrderNumberGenerator();
-    Lock lock = new ZkTemplateLock();
-//       Lock lock = new ZkSequenTemplateLock();
+//    Lock lock = new ZkTemplateLock();
+       Lock lock = new ZkSequenTemplateLock();
 //     Lock lock = new ZkLockWithCuratorTemplate();
     public void createOrder() {
         String orderNum = null;
